@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Linear Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0e1726"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Neon Accents -->
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Glowing Orb Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+    </filter>
+    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="70" result="blur"/>
+    </filter>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.12); }
+      }
+      @keyframes floatOrb {
+        0%, 100% { transform: translate(0px, 0px); }
+        50% { transform: translate(30px, -20px); }
+      }
+      @keyframes blinkCursor {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(-420px); }
+        100% { transform: translateY(420px); }
+      }
+      .orb-1 {
+        animation: floatOrb 8s ease-in-out infinite, pulseGlow 6s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .orb-2 {
+        animation: floatOrb 10s ease-in-out infinite reverse, pulseGlow 7s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .cursor-blink {
+        animation: blinkCursor 1s step-start infinite;
+      }
+      .font-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+      }
+      .font-mono {
+        font-family: 'SF Mono', Consolas, 'Fira Code', Menlo, Monaco, monospace;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Animated Glowing Atmosphere Orbs -->
+  <circle class="orb-1" cx="200" cy="100" r="140" fill="#0284c7" filter="url(#glowCyan)"/>
+  <circle class="orb-2" cx="1000" cy="300" r="160" fill="#7c3aed" filter="url(#glowPurple)"/>
+  <circle class="orb-1" cx="600" cy="380" r="120" fill="#06b6d4" filter="url(#glowCyan)" opacity="0.3"/>
+
+  <!-- Subtle High-Tech Grid Pattern -->
+  <g opacity="0.12" stroke="#94a3b8" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="420"/>
+    <line x1="250" y1="0" x2="250" y2="420"/>
+    <line x1="400" y1="0" x2="400" y2="420"/>
+    <line x1="550" y1="0" x2="550" y2="420"/>
+    <line x1="700" y1="0" x2="700" y2="420"/>
+    <line x1="850" y1="0" x2="850" y2="420"/>
+    <line x1="1000" y1="0" x2="1000" y2="420"/>
+    <line x1="1150" y1="0" x2="1150" y2="420"/>
+    <line x1="0" y1="70" x2="1200" y2="70"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+  </g>
+
+  <!-- Terminal Window Mockup Frame (Right Side) -->
+  <g transform="translate(680, 50)">
+    <rect width="460" height="320" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+    <!-- Terminal Header Buttons -->
+    <circle cx="24" cy="22" r="6" fill="#ef4444"/>
+    <circle cx="44" cy="22" r="6" fill="#f59e0b"/>
+    <circle cx="64" cy="22" r="6" fill="#10b981"/>
+    <text x="90" y="26" fill="#94a3b8" font-size="12" class="font-mono">agy-agent --mode autonomous</text>
+    <line x1="0" y1="42" x2="460" y2="42" stroke="#334155" stroke-width="1"/>
+
+    <!-- Terminal Code Lines -->
+    <text x="24" y="75" fill="#38bdf8" font-size="13" class="font-mono">❯ init terminal-agent --model claude-3-7-sonnet</text>
+    <text x="24" y="105" fill="#10b981" font-size="13" class="font-mono">✔ Workspace indexed (3,412 files, 48 tests)</text>
+    <text x="24" y="135" fill="#cbd5e1" font-size="13" class="font-mono">🤖 Agent: Analyzing multi-repo Git diff &amp; stacktrace...</text>
+    <text x="24" y="165" fill="#a855f7" font-size="13" class="font-mono">⚡ Action: Auto-patching async race condition</text>
+    <text x="24" y="195" fill="#e2e8f0" font-size="13" class="font-mono">   → tests/unit_agent_test.go:42 (100% pass)</text>
+    <text x="24" y="225" fill="#10b981" font-size="13" class="font-mono">✔ git commit -m "fix(cli): resolve concurrency lock"</text>
+    <text x="24" y="255" fill="#facc15" font-size="13" class="font-mono">🚀 Ready: Staged for deployment via MCP tools</text>
+    
+    <!-- Active Prompt & Blinking Cursor -->
+    <text x="24" y="290" fill="#38bdf8" font-size="14" class="font-mono">❯ agentic-run<tspan class="cursor-blink" fill="#38bdf8"> ▋</tspan></text>
+  </g>
+
+  <!-- Foreground Title and Hero Badges (Left Side) -->
+  <!-- Top Category Pill -->
+  <g transform="translate(60, 52)">
+    <rect width="260" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+    <circle cx="18" cy="16" r="4" fill="#38bdf8"/>
+    <text x="32" y="21" fill="#e2e8f0" font-size="12" class="font-title" font-weight="600" letter-spacing="0.5">CURATED AWESOME ECOSYSTEM</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="60" y="145" fill="#ffffff" font-size="44" class="font-title">AI CLI Assistant &amp;</text>
+  <text x="60" y="200" fill="url(#cyanPurple)" font-size="44" class="font-title">Terminal Agents</text>
+
+  <!-- Subtitle / Tagline -->
+  <text x="60" y="248" fill="#94a3b8" font-size="16" class="font-title" font-weight="400">
+    The ultimate curated collection of autonomous terminal coding agents,
+  </text>
+  <text x="60" y="274" fill="#94a3b8" font-size="16" class="font-title" font-weight="400">
+    AI shell copilot assistants, TUI developer harnesses &amp; MCP tooling.
+  </text>
+
+  <!-- Feature Pills -->
+  <g transform="translate(60, 312)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="130" height="34" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="65" y="22" fill="#38bdf8" font-size="13" text-anchor="middle" class="font-title" font-weight="600">⚡ Autonomous</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(142, 0)">
+      <rect width="145" height="34" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="72" y="22" fill="#a855f7" font-size="13" text-anchor="middle" class="font-title" font-weight="600">🧠 Local LLMs</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(299, 0)">
+      <rect width="135" height="34" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="67" y="22" fill="#10b981" font-size="13" text-anchor="middle" class="font-title" font-weight="600">🛠️ TUI &amp; Shell</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(446, 0)">
+      <rect width="130" height="34" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="65" y="22" fill="#f59e0b" font-size="13" text-anchor="middle" class="font-title" font-weight="600">🌐 MCP Ready</text>
+    </g>
+  </g>
+
+  <!-- Border Outline -->
+  <rect width="1200" height="420" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
+</svg>
