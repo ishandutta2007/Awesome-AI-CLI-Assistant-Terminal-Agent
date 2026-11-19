@@ -30,65 +30,32 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saashosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
+
+
+
+## Sector Overview & Market Dynamics
+
+The global AI developer tools and agentic coding ecosystem is estimated at **$7B–$10B** (projected to reach **$26B–$60B+** by the early 2030s at a ~25% CAGR). The market structure is **moderately concentrated at the infrastructure and IDE layer**—dominated by hyperscalers and platform giants (Microsoft/GitHub, Amazon, Anthropic)—while remaining **highly fragmented across specialized terminal agents, autonomous CLI workflows, and open-source tooling** where niche startups and community projects actively compete.
 
 
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Warp (Warp AI & Oz Agents)](https://warp.dev)**  
-
-  Modern GPU-accelerated terminal and Agentic Development Environment featuring natural-language command generation, multi-agent cloud/local execution, and team Warp Drive notebooks.
-
-
-
-- **[Amazon Q Developer CLI (formerly Fig)](https://amazon.com)**  
-
-  Cloud-backed AI command-line assistant providing IDE-style terminal autocomplete, natural-language-to-bash translation, and agentic codebase/AWS troubleshooting.
-
-
-
-- **[GitHub Copilot CLI](https://github.com)**  
-
-  Official GitHub command-line AI assistant and terminal agent capable of explaining shell commands, suggesting git/gh workflows, and executing repository tasks directly in the terminal.
-
-
-
-- **[Termius AI](https://termius.com)**  
-
-  Cross-platform SSH client and cloud-synced DevOps workspace featuring built-in AI command generation, log diagnostics, and shared team snippet vaults.
-
-
-
-- **[Anthropic Claude Code](https://anthropic.com)**  
-
-  Agentic terminal coding and command-line assistant that understands entire repositories, executes shell commands, runs tests, and manages Git workflows via MCP and `SKILL.md`.
-
-
-
-- **[Atlassian Rovo Dev CLI](https://atlassian.com)**  
-
-  Enterprise cloud-connected terminal agent linking local CLI coding and shell automation directly with Jira tickets, Confluence docs, and Bitbucket pull requests.
-
-
-
-- **[Butterfish](https://butterfish.io)**  
-
-  Commercial-friendly AI shell wrapper that embeds persistent LLM context directly into standard `bash` and `zsh` sessions for seamless command suggestions and error explanations.
-
-
-
-- **[Wave Terminal Cloud Sync](https://waveterm.dev)**  
-
-  Hybrid open-core graphical terminal combining inline file/web previews with cloud-synced workspaces and integrated multi-model AI command blocks.
+| Product | Company Valuation / Revenue | Pricing (Starting Paid Tier) | Free Tier Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[GitHub Copilot CLI](https://github.com)** | ~$3.77T Market Cap / ~$346B Revenue (Microsoft) | $10/month (Pro plan) | Free forever plan: 2,000 code completions/month and limited Copilot CLI chat interactions | Official GitHub command-line AI assistant and terminal agent capable of explaining shell commands, suggesting git/gh workflows, and executing repository tasks directly in the terminal. |
+| **[Amazon Q Developer CLI](https://amazon.com)** | ~$2.85T Market Cap / ~$777B Revenue (Amazon) | $19/user/month (Pro plan) | Free forever plan: 50 agentic requests/month and 1,000 lines of code transformation/month | Cloud-backed AI command-line assistant providing IDE-style terminal autocomplete, natural-language-to-bash translation, and agentic codebase/AWS troubleshooting. |
+| **[Anthropic Claude Code](https://anthropic.com)** | ~$1.5T Valuation / ~$81B ARR Run-rate | $20/month (Claude Pro plan; or pay-per-token API) | No free tier (free CLI download, but requires paid Pro subscription at $20/mo or Anthropic API key to run) | Agentic terminal coding and command-line assistant that understands entire repositories, executes shell commands, runs tests, and manages Git workflows via MCP and `SKILL.md`. |
+| **[Atlassian Rovo Dev CLI](https://atlassian.com)** | ~$36B Market Cap / ~$6.5B Revenue (Atlassian) | $17.65/user/month (Cloud Standard tier with Rovo credits) | 30-day free trial on Rovo Dev Standard (2,000 credits/user/month); 14-to-30 day Cloud trial (25–70 Rovo credits/user/month). No perpetual free plan. | Enterprise cloud-connected terminal agent linking local CLI coding and shell automation directly with Jira tickets, Confluence docs, and Bitbucket pull requests. |
+| **[Warp (Warp AI & Oz Agents)](https://warp.dev)** | ~$290M+ Valuation / ~$85M Funding | $20/month (Build plan; $18/mo billed annually) | Free forever plan: 0 managed AI agent credits (BYOK allowed for individuals/small teams ≤10), up to 30 cloud-synced conversations, unlimited core terminal | Modern GPU-accelerated terminal and Agentic Development Environment featuring natural-language command generation, multi-agent cloud/local execution, and team Warp Drive notebooks. |
+| **[Wave Terminal Cloud Sync](https://waveterm.dev)** | Seed-stage Startup / Open-Core | ~$15–$20/month (Planned Pro Cloud Sync tier) | Free forever plan: 100% free and unlimited local terminal usage (BYOK for LLM providers & local Ollama models; no login required) | Hybrid open-core graphical terminal combining inline file/web previews with cloud-synced workspaces and integrated multi-model AI command blocks. |
+| **[Termius AI](https://termius.com)** | ~$4M–$4.5M ARR / $4.1M Seed Funding | $10/month (Pro plan; billed annually) | Free forever plan (Starter): Single local device only, no multi-device cloud sync; 14-day free trial available for Pro | Cross-platform SSH client and cloud-synced DevOps workspace featuring built-in AI command generation, log diagnostics, and shared team snippet vaults. |
+| **[Butterfish](https://butterfish.io)** | Open-Source / Pre-revenue | $0 (100% Free / Self-hosted BYOK) | Free forever: 100% free open-source tool with no software usage limits; users provide their own OpenAI/LLM API keys | Commercial-friendly AI shell wrapper that embeds persistent LLM context directly into standard `bash` and `zsh` sessions for seamless command suggestions and error explanations. |
 
 
 
