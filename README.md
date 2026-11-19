@@ -65,7 +65,7 @@ The market structure is **moderately concentrated at the foundation and IDE laye
 
 ## 💻 Open-Source GitHub Projects
 
-*Ranked strictly by GitHub Star Count (descending) with live badges linking to each repository's stargazers.*
+*Ranked strictly by GitHub Stars_Count (descending) with live badges linking to each repository's stargazers.*
 
 - **[OpenCode (`anomalyco/opencode`)](https://github.com/anomalyco/opencode)** [![Stars](https://img.shields.io/github/stars/anomalyco/opencode?style=social&color=white)](https://github.com/anomalyco/opencode/stargazers)  
   ⚡ The open-source (`MIT`) terminal-native AI coding agent featuring a high-performance TUI, LSP diagnostics, client/server orchestration, and multi-provider LLM support (Claude, OpenAI, Gemini, Ollama).
